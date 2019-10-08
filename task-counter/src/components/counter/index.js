@@ -12,6 +12,8 @@ function Counter() {
             <h2>YOU HAVE DONE {count} TICKETS TODAY</h2>
             <button onClick={() => setCount(count + 1)}>+ ADD</button>
             <button onClick={() => setCount(count - 1)}>- SUBTRACT</button>
+            <br></br>
+            <button onClick={() => setCount(0)}>RESET</button>
         </div>
     )
 }
