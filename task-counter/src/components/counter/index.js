@@ -5,16 +5,17 @@ function Counter() {
 
     const [count, setCount] = useState(0)
 
-    const [name, setName] = useState("")
 
+    // function that will get the value from our input
 
-
+    // event.target.value
+    const [title, setTitle] = useState("")
+    
     return(
         <div>
             <div className="input">
-                <h2>Welcome  {name} !</h2>
-                <input type="text" placeholder="Enter your name" onChange={() => setName(name)}></input>
-                <button type="submit" onClick>Submit</button>
+                <h2>Welcome {title}</h2>
+                <input type="text" placeholder="Enter your name" onChange={event => setTitle(event.target.value)} />
             </div>
 
             <div className="count-buttons">
